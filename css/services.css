@@ -1,0 +1,100 @@
+body {
+    text-align: center;
+}
+
+.repairs {
+    grid-area: repairs;
+}
+
+.accessories {
+    grid-area: accessories;
+}
+
+.tune-ups {
+    grid-area: tune-ups;
+}
+
+.orders {
+    grid-area: orders;
+}
+
+.fittings {
+    grid-area: fittings;
+}
+
+
+.commissions {
+    grid-area: commissions;
+}
+
+.service {
+    padding: 20px;
+    width: 1fr;
+    background-color: #a7e9af;
+    margin: 0;
+}
+
+.title {
+    background-color: #75b79e;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+
+.pic {
+    width: 300px;
+    height: 188px;
+}
+
+
+.content {
+    background-color: #75b79e;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+@media (min-width: 1024px) {
+    .pic {
+        width: 400px;
+        height: 250px;
+    }
+
+    .title {
+        width: 400px;
+    }
+
+    .content {
+        width: 400px;
+    }
+
+    .service{
+        margin: 20px;
+    }
+
+    }
+
+main {
+    padding: 2px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-areas:
+      "repairs"
+      "accessories"
+      "tune-ups"
+      "orders"
+      "fittings"
+      "commissions";
+  }
+  
+  @media (min-width: 1024px) {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "repairs accessories"
+        "tune-ups orders"
+        "fittings commissions";
+    }
+}
