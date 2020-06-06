@@ -46,6 +46,10 @@ img {
     width: 100%;
 }
 
+.landing-img {
+    border: 12px solid #75b79e;
+}
+
 .brandPic {
 }
 
